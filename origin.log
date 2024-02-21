@@ -1,0 +1,678 @@
+out/queries/10a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 591.412
+DO
+out/queries/10b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 331.411
+DO
+out/queries/10c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 4051.968
+DO
+out/queries/11a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 65.622
+DO
+out/queries/11b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 24.649
+DO
+out/queries/11c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 137.503
+DO
+out/queries/11d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 123.719
+DO
+out/queries/12a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 325.937
+DO
+out/queries/12b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 91.954
+DO
+out/queries/12c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1008.3110000000001
+DO
+out/queries/13a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1671.9579999999999
+DO
+out/queries/13b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 722.3950000000001
+DO
+out/queries/13c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 696.2420000000001
+DO
+out/queries/13d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2673.388
+DO
+out/queries/14a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 284.846
+DO
+out/queries/14b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 123.00999999999999
+DO
+out/queries/14c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 506.405
+DO
+out/queries/15a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 482.777
+DO
+out/queries/15b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 41.429
+DO
+out/queries/15c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1054.921
+DO
+out/queries/15d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1159.215
+DO
+out/queries/16a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 172.40600000000003
+DO
+out/queries/16b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 12982.751
+DO
+out/queries/16c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1133.947
+DO
+out/queries/16d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 911.736
+DO
+out/queries/17a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 7779.7789999999995
+DO
+out/queries/17b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 5974.1050000000005
+DO
+out/queries/17c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 5756.312
+DO
+out/queries/17d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 5826.048000000001
+DO
+out/queries/17e.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 7823.696000000001
+DO
+out/queries/17f.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 7601.6050000000005
+DO
+out/queries/18a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 6370.481000000001
+DO
+out/queries/18b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 303.865
+DO
+out/queries/18c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 8644.161
+DO
+out/queries/19a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 460.79
+DO
+out/queries/19b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 221.725
+DO
+out/queries/19c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 729.3040000000001
+DO
+out/queries/19d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 4364.459000000001
+DO
+out/queries/1a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 95.078
+DO
+out/queries/1b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 89.137
+DO
+out/queries/1c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 90.91
+DO
+out/queries/1d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 87.51899999999999
+DO
+out/queries/20a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2203.819
+DO
+out/queries/20b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1723.346
+DO
+out/queries/20c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 992.9540000000001
+DO
+out/queries/21a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 71.792
+DO
+out/queries/21b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 49.897
+DO
+out/queries/21c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 52.471
+DO
+out/queries/22a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 372.08299999999997
+DO
+out/queries/22b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 263.408
+DO
+out/queries/22c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1449.8529999999998
+DO
+out/queries/22d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 703.0100000000001
+DO
+out/queries/23a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 357.238
+DO
+out/queries/23b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 66.57
+DO
+out/queries/23c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 498.313
+DO
+out/queries/24a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 319.313
+DO
+out/queries/24b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 78.57499999999999
+DO
+out/queries/25a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2595.885
+DO
+out/queries/25b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 312.951
+DO
+out/queries/25c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 7279.576
+DO
+out/queries/26a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1233.508
+DO
+out/queries/26b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 208.423
+DO
+out/queries/26c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2749.863
+DO
+out/queries/27a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 52.894
+DO
+out/queries/27b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 43.38700000000001
+DO
+out/queries/27c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 49.704
+DO
+out/queries/28a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 956.3359999999999
+DO
+out/queries/28b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 876.327
+DO
+out/queries/28c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 577.426
+DO
+out/queries/29a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 264.688
+DO
+out/queries/29b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 186.55700000000002
+DO
+out/queries/29c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 341.729
+DO
+out/queries/2a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 346.322
+DO
+out/queries/2b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 332.79699999999997
+DO
+out/queries/2c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 315.831
+DO
+out/queries/2d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 429.24
+DO
+out/queries/30a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2787.85
+DO
+out/queries/30b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 430.04499999999996
+DO
+out/queries/30c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 5108.119000000001
+DO
+out/queries/31a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 259.13800000000003
+DO
+out/queries/31b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 136.41599999999997
+DO
+out/queries/31c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 415.01399999999995
+DO
+out/queries/32a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 10.468
+DO
+out/queries/32b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 110.503
+DO
+out/queries/33a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 71.575
+DO
+out/queries/33b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 76.03399999999999
+DO
+out/queries/33c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 181.06
+DO
+out/queries/3a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 143.076
+DO
+out/queries/3b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 90.978
+DO
+out/queries/3c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 244.555
+DO
+out/queries/4a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 98.31
+DO
+out/queries/4b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 142.635
+DO
+out/queries/4c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 92.525
+DO
+out/queries/5a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 239.97
+DO
+out/queries/5b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 224.56699999999998
+DO
+out/queries/5c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 307.005
+DO
+out/queries/6a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 24.506
+DO
+out/queries/6b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 192.915
+DO
+out/queries/6c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 9.685
+DO
+out/queries/6d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 4442.897
+DO
+out/queries/6e.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 17.785
+DO
+out/queries/6f.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 4543.014
+DO
+out/queries/7a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 653.263
+DO
+out/queries/7b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 181.553
+DO
+out/queries/7c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1857.244
+DO
+out/queries/8a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2214.86
+DO
+out/queries/8b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 276.81199999999995
+DO
+out/queries/8c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 3691.252
+DO
+out/queries/8d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2449.239
+DO
+out/queries/9a.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 441.298
+DO
+out/queries/9b.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 426.647
+DO
+out/queries/9c.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 685.839
+DO
+out/queries/9d.sql
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2646.5099999999998
+DO

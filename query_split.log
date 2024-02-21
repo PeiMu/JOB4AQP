@@ -1,0 +1,1356 @@
+out/QuerySplit/10a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 586.694
+DO
+out/QuerySplit/10b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 327.576
+DO
+out/QuerySplit/10c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 4032.4520000000007
+DO
+out/QuerySplit/11a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 64.378
+DO
+out/QuerySplit/11b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 24.315
+DO
+out/QuerySplit/11c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 137.04
+DO
+out/QuerySplit/11d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 122.911
+DO
+out/QuerySplit/12a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 321.99199999999996
+DO
+out/QuerySplit/12b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 91.947
+DO
+out/QuerySplit/12c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1002.2090000000001
+DO
+out/QuerySplit/13a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1673.932
+DO
+out/QuerySplit/13b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 723.4430000000001
+DO
+out/QuerySplit/13c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 702.8100000000001
+DO
+out/QuerySplit/13d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2668.1990000000005
+DO
+out/QuerySplit/14a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 282.861
+DO
+out/QuerySplit/14b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 123.79599999999999
+DO
+out/QuerySplit/14c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 506.12
+DO
+out/QuerySplit/15a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 489.225
+DO
+out/QuerySplit/15b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 41.553000000000004
+DO
+out/QuerySplit/15c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1053.436
+DO
+out/QuerySplit/15d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1153.0269999999998
+DO
+out/QuerySplit/16a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 171.601
+DO
+out/QuerySplit/16b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 12983.803
+DO
+out/QuerySplit/16c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1124.486
+DO
+out/QuerySplit/16d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 914.612
+DO
+out/QuerySplit/17a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 7825.094999999999
+DO
+out/QuerySplit/17b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 5967.852
+DO
+out/QuerySplit/17c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 5741.954000000001
+DO
+out/QuerySplit/17d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 5864.893
+DO
+out/QuerySplit/17e.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 7801.6179999999995
+DO
+out/QuerySplit/17f.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 7604.926
+DO
+out/QuerySplit/18a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 6377.546
+DO
+out/QuerySplit/18b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 301.128
+DO
+out/QuerySplit/18c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 8590.561
+DO
+out/QuerySplit/19a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 459.64000000000004
+DO
+out/QuerySplit/19b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 221.883
+DO
+out/QuerySplit/19c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 728.9330000000001
+DO
+out/QuerySplit/19d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 4346.048
+DO
+out/QuerySplit/1a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 95.098
+DO
+out/QuerySplit/1b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 89.29200000000002
+DO
+out/QuerySplit/1c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 92.40599999999999
+DO
+out/QuerySplit/1d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 88.68
+DO
+out/QuerySplit/20a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2230.9429999999998
+DO
+out/QuerySplit/20b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1742.1299999999999
+DO
+out/QuerySplit/20c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 975.735
+DO
+out/QuerySplit/21a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 72.032
+DO
+out/QuerySplit/21b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 50.711
+DO
+out/QuerySplit/21c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 53.041
+DO
+out/QuerySplit/22a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 378.082
+DO
+out/QuerySplit/22b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 258.2
+DO
+out/QuerySplit/22c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1447.665
+DO
+out/QuerySplit/22d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 699.136
+DO
+out/QuerySplit/23a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 351.023
+DO
+out/QuerySplit/23b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 67.30699999999999
+DO
+out/QuerySplit/23c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 500.024
+DO
+out/QuerySplit/24a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 312.968
+DO
+out/QuerySplit/24b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 78.55199999999999
+DO
+out/QuerySplit/25a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2526.739
+DO
+out/QuerySplit/25b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 314.72700000000003
+DO
+out/QuerySplit/25c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 7255.367
+DO
+out/QuerySplit/26a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1212.147
+DO
+out/QuerySplit/26b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 213.128
+DO
+out/QuerySplit/26c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2769.528
+DO
+out/QuerySplit/27a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 52.798
+DO
+out/QuerySplit/27b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 43.24100000000001
+DO
+out/QuerySplit/27c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 49.623000000000005
+DO
+out/QuerySplit/28a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 957.712
+DO
+out/QuerySplit/28b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 880.592
+DO
+out/QuerySplit/28c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 569.253
+DO
+out/QuerySplit/29a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 264.537
+DO
+out/QuerySplit/29b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 187.76899999999998
+DO
+out/QuerySplit/29c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 342.209
+DO
+out/QuerySplit/2a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 347.27099999999996
+DO
+out/QuerySplit/2b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 333.76399999999995
+DO
+out/QuerySplit/2c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 314.967
+DO
+out/QuerySplit/2d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 429.165
+DO
+out/QuerySplit/30a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2798.0980000000004
+DO
+out/QuerySplit/30b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 428.203
+DO
+out/QuerySplit/30c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 5104.764
+DO
+out/QuerySplit/31a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 262.723
+DO
+out/QuerySplit/31b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 136.587
+DO
+out/QuerySplit/31c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 419.67100000000005
+DO
+out/QuerySplit/32a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 10.724
+DO
+out/QuerySplit/32b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 109.56899999999999
+DO
+out/QuerySplit/33a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 71.356
+DO
+out/QuerySplit/33b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 75.703
+DO
+out/QuerySplit/33c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 181.058
+DO
+out/QuerySplit/3a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 142.461
+DO
+out/QuerySplit/3b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 91.744
+DO
+out/QuerySplit/3c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 245.42799999999997
+DO
+out/QuerySplit/4a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 98.161
+DO
+out/QuerySplit/4b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 142.218
+DO
+out/QuerySplit/4c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 92.22200000000001
+DO
+out/QuerySplit/5a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 238.64499999999998
+DO
+out/QuerySplit/5b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 223.72599999999997
+DO
+out/QuerySplit/5c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 307.957
+DO
+out/QuerySplit/6a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 24.703000000000003
+DO
+out/QuerySplit/6b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 191.78199999999998
+DO
+out/QuerySplit/6c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 9.786000000000001
+DO
+out/QuerySplit/6d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 4433.322
+DO
+out/QuerySplit/6e.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 17.817999999999998
+DO
+out/QuerySplit/6f.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 4519.823
+DO
+out/QuerySplit/7a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 675.6149999999999
+DO
+out/QuerySplit/7b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 181.23499999999999
+DO
+out/QuerySplit/7c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 1856.604
+DO
+out/QuerySplit/8a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2185.756
+DO
+out/QuerySplit/8b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 278.818
+DO
+out/QuerySplit/8c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 3666.186
+DO
+out/QuerySplit/8d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2464.296
+DO
+out/QuerySplit/9a.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 441.408
+DO
+out/QuerySplit/9b.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 426.902
+DO
+out/QuerySplit/9c.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 684.288
+DO
+out/QuerySplit/9d.sql
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+SET
+SET
+SET
+NOTICE:  Execution time in ms = 2652.249
+DO
