@@ -1,4 +1,4 @@
-dir="/home/pei/benchmarks/imdb_job-postgres/skinner_explained"
+dir="/home/pei/Project/benchmarks/imdb_job-postgres/skinner_explained"
 iteration=10
 
 rm -f result/*
