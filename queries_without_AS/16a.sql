@@ -1,26 +1,26 @@
-SELECT MIN(an.name) AS cool_actor_pseudonym,
-       MIN(t.title) AS series_named_after_char
-FROM aka_name AS an,
-     cast_info AS ci,
-     company_name AS cn,
-     keyword AS k,
-     movie_companies AS mc,
-     movie_keyword AS mk,
-     name AS n,
-     title AS t
-WHERE cn.country_code ='[us]'
-  AND k.keyword ='character-name-in-title'
-  AND t.episode_nr >= 50
-  AND t.episode_nr < 100
-  AND an.person_id = n.id
-  AND n.id = ci.person_id
-  AND ci.movie_id = t.id
-  AND t.id = mk.movie_id
-  AND mk.keyword_id = k.id
-  AND t.id = mc.movie_id
-  AND mc.company_id = cn.id
-  AND an.person_id = ci.person_id
-  AND ci.movie_id = mc.movie_id
-  AND ci.movie_id = mk.movie_id
-  AND mc.movie_id = mk.movie_id;
+SELECT MIN(aka_name.name) AS cool_actor_pseudonym,
+       MIN(title.title) AS series_named_after_char
+FROM aka_name,
+     cast_info,
+     company_name,
+     keyword,
+     movie_companies,
+     movie_keyword,
+     name,
+     title
+WHERE company_name.country_code ='[us]'
+  AND keyword.keyword ='character-name-in-title'
+  AND title.episode_nr >= 50
+  AND title.episode_nr < 100
+  AND aka_name.person_id = name.id
+  AND name.id = cast_info.person_id
+  AND cast_info.movie_id = title.id
+  AND title.id = movie_keyword.movie_id
+  AND movie_keyword.keyword_id = keyword.id
+  AND title.id = movie_companies.movie_id
+  AND movie_companies.company_id = company_name.id
+  AND aka_name.person_id = cast_info.person_id
+  AND cast_info.movie_id = movie_companies.movie_id
+  AND cast_info.movie_id = movie_keyword.movie_id
+  AND movie_companies.movie_id = movie_keyword.movie_id;
 

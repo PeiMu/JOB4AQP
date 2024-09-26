@@ -1,32 +1,32 @@
-SELECT MIN(cn.name) AS producing_company,
-       MIN(miidx.info) AS rating,
-       MIN(t.title) AS movie_about_winning
-FROM company_name AS cn,
-     company_type AS ct,
-     info_type AS it,
-     info_type AS it2,
-     kind_type AS kt,
-     movie_companies AS mc,
-     movie_info AS mi,
-     movie_info_idx AS miidx,
-     title AS t
-WHERE cn.country_code ='[us]'
-  AND ct.kind ='production companies'
-  AND it.info ='rating'
-  AND it2.info ='release dates'
-  AND kt.kind ='movie'
-  AND t.title != ''
-  AND (t.title LIKE '%Champion%'
-       OR t.title LIKE '%Loser%')
-  AND mi.movie_id = t.id
-  AND it2.id = mi.info_type_id
-  AND kt.id = t.kind_id
-  AND mc.movie_id = t.id
-  AND cn.id = mc.company_id
-  AND ct.id = mc.company_type_id
-  AND miidx.movie_id = t.id
-  AND it.id = miidx.info_type_id
-  AND mi.movie_id = miidx.movie_id
-  AND mi.movie_id = mc.movie_id
-  AND miidx.movie_id = mc.movie_id;
+SELECT MIN(company_name.name) AS producing_company,
+       MIN(movie_info_idx.info) AS rating,
+       MIN(title.title) AS movie_about_winning
+FROM company_name,
+     company_type,
+     info_typeinfo_type,
+     info_type,
+     kind_typet,
+     movie_companies,
+     movie_info,
+     movie_info_idx,
+     title
+WHERE company_name.country_code ='[us]'
+  AND company_type.kind ='production companies'
+  AND info_type.info ='rating'
+  AND info_type.info ='release dates'
+  AND title.kind ='movie'
+  AND title.title != ''
+  AND (title.title LIKE '%Champion%'
+       OR title.title LIKE '%Loser%')
+  AND movie_info.movie_id = title.id
+  AND info_type.id = movie_info.info_type_id
+  AND title.id = title.kind_id
+  AND movie_companies.movie_id = title.id
+  AND company_name.id = movie_companies.company_id
+  AND company_type.id = movie_companies.company_type_id
+  AND movie_info_idx.movie_id = title.id
+  AND info_type.id = movie_info_idx.info_type_id
+  AND movie_info.movie_id = movie_info_idx.movie_id
+  AND movie_info.movie_id = movie_companies.movie_id
+  AND movie_info_idx.movie_id = movie_companies.movie_id;
 

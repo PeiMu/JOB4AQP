@@ -1,62 +1,62 @@
-SELECT MIN(mi.info) AS movie_budget,
-       MIN(mi_idx.info) AS movie_votes,
-       MIN(n.name) AS writer,
-       MIN(t.title) AS complete_gore_movie
-FROM complete_cast AS cc,
-     comp_cast_type AS cct1,
-     comp_cast_type AS cct2,
-     cast_info AS ci,
-     info_type AS it1,
-     info_type AS it2,
-     keyword AS k,
-     movie_info AS mi,
-     movie_info_idx AS mi_idx,
-     movie_keyword AS mk,
-     name AS n,
-     title AS t
-WHERE cct1.kind IN ('cast',
+SELECT MIN(movie_info.info) AS movie_budget,
+       MIN(movie_info_idx.info) AS movie_votes,
+       MIN(name.name) AS writer,
+       MIN(title.title) AS complete_gore_movie
+FROM complete_cast,
+     comp_cast_type,
+     comp_cast_type,
+     cast_info,
+     info_type,
+     info_type,
+     keyword,
+     movie_info,
+     movie_info_idx,
+     movie_keyword,
+     name,
+     title
+WHERE comp_cast_type.kind IN ('cast',
                     'crew')
-  AND cct2.kind ='complete+verified'
-  AND ci.note IN ('(writer)',
+  AND comp_cast_type.kind ='complete+verified'
+  AND cast_info.note IN ('(writer)',
                   '(head writer)',
                   '(written by)',
                   '(story)',
                   '(story editor)')
-  AND it1.info = 'genres'
-  AND it2.info = 'votes'
-  AND k.keyword IN ('murder',
+  AND info_type.info = 'genres'
+  AND info_type.info = 'votes'
+  AND keyword.keyword IN ('murder',
                     'violence',
                     'blood',
                     'gore',
                     'death',
                     'female-nudity',
                     'hospital')
-  AND mi.info IN ('Horror',
+  AND movie_info.info IN ('Horror',
                   'Thriller')
-  AND n.gender = 'm'
-  AND t.production_year > 2000
-  AND (t.title LIKE '%Freddy%'
-       OR t.title LIKE '%Jason%'
-       OR t.title LIKE 'Saw%')
-  AND t.id = mi.movie_id
-  AND t.id = mi_idx.movie_id
-  AND t.id = ci.movie_id
-  AND t.id = mk.movie_id
-  AND t.id = cc.movie_id
-  AND ci.movie_id = mi.movie_id
-  AND ci.movie_id = mi_idx.movie_id
-  AND ci.movie_id = mk.movie_id
-  AND ci.movie_id = cc.movie_id
-  AND mi.movie_id = mi_idx.movie_id
-  AND mi.movie_id = mk.movie_id
-  AND mi.movie_id = cc.movie_id
-  AND mi_idx.movie_id = mk.movie_id
-  AND mi_idx.movie_id = cc.movie_id
-  AND mk.movie_id = cc.movie_id
-  AND n.id = ci.person_id
-  AND it1.id = mi.info_type_id
-  AND it2.id = mi_idx.info_type_id
-  AND k.id = mk.keyword_id
-  AND cct1.id = cc.subject_id
-  AND cct2.id = cc.status_id;
+  AND name.gender = 'm'
+  AND title.production_year > 2000
+  AND (title.title LIKE '%Freddy%'
+       OR title.title LIKE '%Jason%'
+       OR title.title LIKE 'Saw%')
+  AND title.id = movie_info.movie_id
+  AND title.id = movie_info_idx.movie_id
+  AND title.id = cast_info.movie_id
+  AND title.id = movie_keyword.movie_id
+  AND title.id = complete_cast.movie_id
+  AND cast_info.movie_id = movie_info.movie_id
+  AND cast_info.movie_id = movie_info_idx.movie_id
+  AND cast_info.movie_id = movie_keyword.movie_id
+  AND cast_info.movie_id = complete_cast.movie_id
+  AND movie_info.movie_id = movie_info_idx.movie_id
+  AND movie_info.movie_id = movie_keyword.movie_id
+  AND movie_info.movie_id = complete_cast.movie_id
+  AND movie_info_idx.movie_id = movie_keyword.movie_id
+  AND movie_info_idx.movie_id = complete_cast.movie_id
+  AND movie_keyword.movie_id = complete_cast.movie_id
+  AND name.id = cast_info.person_id
+  AND info_type.id = movie_info.info_type_id
+  AND info_type.id = movie_info_idx.info_type_id
+  AND keyword.id = movie_keyword.keyword_id
+  AND comp_cast_type.id = complete_cast.subject_id
+  AND comp_cast_type.id = complete_cast.status_id;
 

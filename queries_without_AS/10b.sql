@@ -1,21 +1,21 @@
-SELECT MIN(chn.name) AS character,
-       MIN(t.title) AS russian_mov_with_actor_producer
-FROM char_name AS chn,
-     cast_info AS ci,
-     company_name AS cn,
-     company_type AS ct,
-     movie_companies AS mc,
-     role_type AS rt,
-     title AS t
-WHERE ci.note LIKE '%(producer)%'
-  AND cn.country_code = '[ru]'
-  AND rt.role = 'actor'
-  AND t.production_year > 2010
-  AND t.id = mc.movie_id
-  AND t.id = ci.movie_id
-  AND ci.movie_id = mc.movie_id
-  AND chn.id = ci.person_role_id
-  AND rt.id = ci.role_id
-  AND cn.id = mc.company_id
-  AND ct.id = mc.company_type_id;
+SELECT MIN(char_name.name) AS character,
+       MIN(title.title) AS russian_mov_with_actor_producer
+FROM char_namechar_name,
+     cast_info,
+     company_name,
+     company_type,
+     movie_companies,
+     role_type,
+     title
+WHERE cast_info.note LIKE '%(producer)%'
+  AND company_name.country_code = '[ru]'
+  AND role_type.role = 'actor'
+  AND title.production_year > 2010
+  AND title.id = movie_companies.movie_id
+  AND title.id = cast_info.movie_id
+  AND cast_info.movie_id = movie_companies.movie_id
+  AND char_name.id = cast_info.person_role_id
+  AND role_type.id = cast_info.role_id
+  AND company_name.id = movie_companies.company_id
+  AND company_type.id = movie_companies.company_type_id;
 

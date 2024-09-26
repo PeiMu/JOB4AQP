@@ -1,25 +1,25 @@
-SELECT MIN(an1.name) AS actress_pseudonym,
-       MIN(t.title) AS japanese_movie_dubbed
-FROM aka_name AS an1,
-     cast_info AS ci,
-     company_name AS cn,
-     movie_companies AS mc,
-     name AS n1,
-     role_type AS rt,
-     title AS t
-WHERE ci.note ='(voice: English version)'
-  AND cn.country_code ='[jp]'
-  AND mc.note LIKE '%(Japan)%'
-  AND mc.note NOT LIKE '%(USA)%'
-  AND n1.name LIKE '%Yo%'
-  AND n1.name NOT LIKE '%Yu%'
-  AND rt.role ='actress'
-  AND an1.person_id = n1.id
-  AND n1.id = ci.person_id
-  AND ci.movie_id = t.id
-  AND t.id = mc.movie_id
-  AND mc.company_id = cn.id
-  AND ci.role_id = rt.id
-  AND an1.person_id = ci.person_id
-  AND ci.movie_id = mc.movie_id;
+SELECT MIN(aka_name.name) AS actress_pseudonym,
+       MIN(title.title) AS japanese_movie_dubbed
+FROM aka_name,
+     cast_info,
+     company_name,
+     movie_companies,
+     name,
+     role_type,
+     title
+WHERE cast_info.note ='(voice: English version)'
+  AND company_name.country_code ='[jp]'
+  AND movie_companies.note LIKE '%(Japan)%'
+  AND movie_companies.note NOT LIKE '%(USA)%'
+  AND name.name LIKE '%Yo%'
+  AND name.name NOT LIKE '%Yu%'
+  AND role_type.role ='actress'
+  AND aka_name.person_id = name.id
+  AND name.id = cast_info.person_id
+  AND cast_info.movie_id = title.id
+  AND title.id = movie_companies.movie_id
+  AND movie_companies.company_id = company_name.id
+  AND cast_info.role_id = role_type.id
+  AND aka_name.person_id = cast_info.person_id
+  AND cast_info.movie_id = movie_companies.movie_id;
 

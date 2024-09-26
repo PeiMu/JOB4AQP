@@ -1,53 +1,53 @@
-SELECT MIN(chn.name) AS voiced_char_name,
-       MIN(n.name) AS voicing_actress_name,
-       MIN(t.title) AS kung_fu_panda
-FROM aka_name AS an,
-     char_name AS chn,
-     cast_info AS ci,
-     company_name AS cn,
-     info_type AS it,
-     keyword AS k,
-     movie_companies AS mc,
-     movie_info AS mi,
-     movie_keyword AS mk,
-     name AS n,
-     role_type AS rt,
-     title AS t
-WHERE ci.note IN ('(voice)',
+SELECT MIN(char_name.name) AS voiced_char_name,
+       MIN(name.name) AS voicing_actress_name,
+       MIN(title.title)ung_fu_panda
+FROM aka_name,
+     char_namechar_name,
+     cast_info,
+     company_name,
+     info_typeinfo_type,
+     keyword,
+     movie_companies,
+     movie_info,
+     movie_keyword,
+     name,
+     role_type,
+     title
+WHERE cast_info.note IN ('(voice)',
                   '(voice: Japanese version)',
                   '(voice) (uncredited)',
                   '(voice: English version)')
-  AND cn.country_code ='[us]'
-  AND cn.name = 'DreamWorks Animation'
-  AND it.info = 'release dates'
-  AND k.keyword IN ('hero',
+  AND company_name.country_code ='[us]'
+  AND company_name.name = 'DreamWorks Animation'
+  AND info_type.info = 'release dates'
+  AND keyword.keyword IN ('hero',
                     'martial-arts',
                     'hand-to-hand-combat',
                     'computer-animated-movie')
-  AND mi.info IS NOT NULL
-  AND (mi.info LIKE 'Japan:%201%'
-       OR mi.info LIKE 'USA:%201%')
-  AND n.gender ='f'
-  AND n.name LIKE '%An%'
-  AND rt.role ='actress'
-  AND t.production_year > 2010
-  AND t.title LIKE 'Kung Fu Panda%'
-  AND t.id = mi.movie_id
-  AND t.id = mc.movie_id
-  AND t.id = ci.movie_id
-  AND t.id = mk.movie_id
-  AND mc.movie_id = ci.movie_id
-  AND mc.movie_id = mi.movie_id
-  AND mc.movie_id = mk.movie_id
-  AND mi.movie_id = ci.movie_id
-  AND mi.movie_id = mk.movie_id
-  AND ci.movie_id = mk.movie_id
-  AND cn.id = mc.company_id
-  AND it.id = mi.info_type_id
-  AND n.id = ci.person_id
-  AND rt.id = ci.role_id
-  AND n.id = an.person_id
-  AND ci.person_id = an.person_id
-  AND chn.id = ci.person_role_id
-  AND k.id = mk.keyword_id;
+  AND movie_info.info IS NOT NULL
+  AND (movie_info.info LIKE 'Japan:%201%'
+       OR movie_info.info LIKE 'USA:%201%')
+  AND name.gender ='f'
+  AND name.name LIKE '%An%'
+  AND role_type.role ='actress'
+  AND title.production_year > 2010
+  AND title.title LIKE 'Kung Fu Panda%'
+  AND title.id = movie_info.movie_id
+  AND title.id = movie_companies.movie_id
+  AND title.id = cast_info.movie_id
+  AND title.id = movie_keyword.movie_id
+  AND movie_companies.movie_id = cast_info.movie_id
+  AND movie_companies.movie_id = movie_info.movie_id
+  AND movie_companies.movie_id = movie_keyword.movie_id
+  AND movie_info.movie_id = cast_info.movie_id
+  AND movie_info.movie_id = movie_keyword.movie_id
+  AND cast_info.movie_id = movie_keyword.movie_id
+  AND company_name.id = movie_companies.company_id
+  AND info_type.id = movie_info.info_type_id
+  AND name.id = cast_info.person_id
+  AND role_type.id = cast_info.role_id
+  AND name.id = aka_name.person_id
+  AND cast_info.person_id = aka_name.person_id
+  AND char_name.id = cast_info.person_role_id
+  AND keyword.id = movie_keyword.keyword_id;
 

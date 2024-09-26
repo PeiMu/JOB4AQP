@@ -1,52 +1,52 @@
-SELECT MIN(cn.name) AS producing_company,
-       MIN(lt.link) AS link_type,
-       MIN(t.title) AS complete_western_sequel
-FROM complete_cast AS cc,
-     comp_cast_type AS cct1,
-     comp_cast_type AS cct2,
-     company_name AS cn,
-     company_type AS ct,
-     keyword AS k,
-     link_type AS lt,
-     movie_companies AS mc,
-     movie_info AS mi,
-     movie_keyword AS mk,
-     movie_link AS ml,
-     title AS t
-WHERE cct1.kind IN ('cast',
+SELECT MIN(company_name.name) AS producing_company,
+       MIN(link_type.link) AS link_type,
+       MIN(title.title) AS complete_western_sequel
+FROM complete_cast,
+     comp_cast_type,
+     comp_cast_type,
+     company_name,
+     company_type,
+     keyword,
+     link_type,
+     movie_companies,
+     movie_info,
+     movie_keyword,
+     movie_link,
+     title
+WHERE comp_cast_type.kind IN ('cast',
                     'crew')
-  AND cct2.kind = 'complete'
-  AND cn.country_code !='[pl]'
-  AND (cn.name LIKE '%Film%'
-       OR cn.name LIKE '%Warner%')
-  AND ct.kind ='production companies'
-  AND k.keyword ='sequel'
-  AND lt.link LIKE '%follow%'
-  AND mc.note IS NULL
-  AND mi.info IN ('Sweden',
+  AND comp_cast_type.kind = 'complete'
+  AND company_name.country_code !='[pl]'
+  AND (company_name.name LIKE '%Film%'
+       OR company_name.name LIKE '%Warner%')
+  AND company_type.kind ='production companies'
+  AND keyword.keyword ='sequel'
+  AND link_type.link LIKE '%follow%'
+  AND movie_companies.note IS NULL
+  AND movie_info.info IN ('Sweden',
                   'Germany',
                   'Swedish',
                   'German')
-  AND t.production_year BETWEEN 1950 AND 2000
-  AND lt.id = ml.link_type_id
-  AND ml.movie_id = t.id
-  AND t.id = mk.movie_id
-  AND mk.keyword_id = k.id
-  AND t.id = mc.movie_id
-  AND mc.company_type_id = ct.id
-  AND mc.company_id = cn.id
-  AND mi.movie_id = t.id
-  AND t.id = cc.movie_id
-  AND cct1.id = cc.subject_id
-  AND cct2.id = cc.status_id
-  AND ml.movie_id = mk.movie_id
-  AND ml.movie_id = mc.movie_id
-  AND mk.movie_id = mc.movie_id
-  AND ml.movie_id = mi.movie_id
-  AND mk.movie_id = mi.movie_id
-  AND mc.movie_id = mi.movie_id
-  AND ml.movie_id = cc.movie_id
-  AND mk.movie_id = cc.movie_id
-  AND mc.movie_id = cc.movie_id
-  AND mi.movie_id = cc.movie_id;
+  AND title.production_year BETWEEN 1950 AND 2000
+  AND link_type.id = movie_link.link_type_id
+  AND movie_link.movie_id = title.id
+  AND title.id = movie_keyword.movie_id
+  AND movie_keyword.keyword_id = keyword.id
+  AND title.id = movie_companies.movie_id
+  AND movie_companies.company_type_id = company_type.id
+  AND movie_companies.company_id = company_name.id
+  AND movie_info.movie_id = title.id
+  AND title.id = complete_cast.movie_id
+  AND comp_cast_type.id = complete_cast.subject_id
+  AND comp_cast_type.id = complete_cast.status_id
+  AND movie_link.movie_id = movie_keyword.movie_id
+  AND movie_link.movie_id = movie_companies.movie_id
+  AND movie_keyword.movie_id = movie_companies.movie_id
+  AND movie_link.movie_id = movie_info.movie_id
+  AND movie_keyword.movie_id = movie_info.movie_id
+  AND movie_companies.movie_id = movie_info.movie_id
+  AND movie_link.movie_id = complete_cast.movie_id
+  AND movie_keyword.movie_id = complete_cast.movie_id
+  AND movie_companies.movie_id = complete_cast.movie_id
+  AND movie_info.movie_id = complete_cast.movie_id;
 

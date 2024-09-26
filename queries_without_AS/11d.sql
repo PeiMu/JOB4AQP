@@ -1,30 +1,30 @@
-SELECT MIN(cn.name) AS from_company,
-       MIN(mc.note) AS production_note,
-       MIN(t.title) AS movie_based_on_book
-FROM company_name AS cn,
-     company_type AS ct,
-     keyword AS k,
-     link_type AS lt,
-     movie_companies AS mc,
-     movie_keyword AS mk,
-     movie_link AS ml,
-     title AS t
-WHERE cn.country_code !='[pl]'
-  AND ct.kind != 'production companies'
-  AND ct.kind IS NOT NULL
-  AND k.keyword IN ('sequel',
+SELECT MIN(company_name.name) AS from_company,
+       MIN(movie_companies.note) AS production_note,
+       MIN(title.title) AS movie_based_on_book
+FROM company_name,
+     company_type,
+     keyword,
+     link_type,
+     movie_companies,
+     movie_keyword,
+     movie_link,
+     title
+WHERE company_name.country_code !='[pl]'
+  AND company_type.kind != 'production companies'
+  AND company_type.kind IS NOT NULL
+  AND keyword.keyword IN ('sequel',
                     'revenge',
                     'based-on-novel')
-  AND mc.note IS NOT NULL
-  AND t.production_year > 1950
-  AND lt.id = ml.link_type_id
-  AND ml.movie_id = t.id
-  AND t.id = mk.movie_id
-  AND mk.keyword_id = k.id
-  AND t.id = mc.movie_id
-  AND mc.company_type_id = ct.id
-  AND mc.company_id = cn.id
-  AND ml.movie_id = mk.movie_id
-  AND ml.movie_id = mc.movie_id
-  AND mk.movie_id = mc.movie_id;
+  AND movie_companies.note IS NOT NULL
+  AND title.production_year > 1950
+  AND link_type.id = movie_link.link_type_id
+  AND movie_link.movie_id = title.id
+  AND title.id = movie_keyword.movie_id
+  AND movie_keyword.keyword_id = keyword.id
+  AND title.id = movie_companies.movie_id
+  AND movie_companies.company_type_id = company_type.id
+  AND movie_companies.company_id = company_name.id
+  AND movie_link.movie_id = movie_keyword.movie_id
+  AND movie_link.movie_id = movie_companies.movie_id
+  AND movie_keyword.movie_id = movie_companies.movie_id;
 

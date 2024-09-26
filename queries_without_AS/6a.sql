@@ -1,17 +1,17 @@
-SELECT MIN(k.keyword) AS movie_keyword,
-       MIN(n.name) AS actor_name,
-       MIN(t.title) AS marvel_movie
-FROM cast_info AS ci,
-     keyword AS k,
-     movie_keyword AS mk,
-     name AS n,
-     title AS t
-WHERE k.keyword = 'marvel-cinematic-universe'
-  AND n.name LIKE '%Downey%Robert%'
-  AND t.production_year > 2010
-  AND k.id = mk.keyword_id
-  AND t.id = mk.movie_id
-  AND t.id = ci.movie_id
-  AND ci.movie_id = mk.movie_id
-  AND n.id = ci.person_id;
+SELECT MIN(keyword.keyword) AS movie_keyword,
+       MIN(name.name) AS actor_name,
+       MIN(title.title) AS marvel_movie
+FROM cast_info,
+     keyword,
+     movie_keyword,
+     name,
+     title
+WHERE keyword.keyword = 'marvel-cinematic-universe'
+  AND name.name LIKE '%Downey%Robert%'
+  AND title.production_year > 2010
+  AND keyword.id = movie_keyword.keyword_id
+  AND title.id = movie_keyword.movie_id
+  AND title.id = cast_info.movie_id
+  AND cast_info.movie_id = movie_keyword.movie_id
+  AND name.id = cast_info.person_id;
 

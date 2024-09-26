@@ -1,20 +1,20 @@
-SELECT MIN(t.title) AS complete_downey_ironman_movie
-FROM complete_cast AS cc,
-     comp_cast_type AS cct1,
-     comp_cast_type AS cct2,
-     char_name AS chn,
-     cast_info AS ci,
-     keyword AS k,
-     kind_type AS kt,
-     movie_keyword AS mk,
-     name AS n,
-     title AS t
-WHERE cct1.kind = 'cast'
-  AND cct2.kind LIKE '%complete%'
-  AND chn.name NOT LIKE '%Sherlock%'
-  AND (chn.name LIKE '%Tony%Stark%'
-       OR chn.name LIKE '%Iron%Man%')
-  AND k.keyword IN ('superhero',
+SELECT MIN(title.title) AS complete_downey_ironman_movie
+FROM complete_cast,
+     comp_cast_type,
+     comp_cast_type,
+     char_namechar_name,
+     cast_info,
+     keyword,
+     kind_typet,
+     movie_keyword,
+     name,
+     title
+WHERE comp_cast_type.kind = 'cast'
+  AND comp_cast_type.kind LIKE '%complete%'
+  AND char_name.name NOT LIKE '%Sherlock%'
+  AND (char_name.name LIKE '%Tony%Stark%'
+       OR char_name.name LIKE '%Iron%Man%')
+  AND keyword.keyword IN ('superhero',
                     'sequel',
                     'second-part',
                     'marvel-comics',
@@ -22,18 +22,18 @@ WHERE cct1.kind = 'cast'
                     'tv-special',
                     'fight',
                     'violence')
-  AND kt.kind = 'movie'
-  AND t.production_year > 1950
-  AND kt.id = t.kind_id
-  AND t.id = mk.movie_id
-  AND t.id = ci.movie_id
-  AND t.id = cc.movie_id
-  AND mk.movie_id = ci.movie_id
-  AND mk.movie_id = cc.movie_id
-  AND ci.movie_id = cc.movie_id
-  AND chn.id = ci.person_role_id
-  AND n.id = ci.person_id
-  AND k.id = mk.keyword_id
-  AND cct1.id = cc.subject_id
-  AND cct2.id = cc.status_id;
+  AND title.kind = 'movie'
+  AND title.production_year > 1950
+  AND title.id = title.kind_id
+  AND title.id = movie_keyword.movie_id
+  AND title.id = cast_info.movie_id
+  AND title.id = complete_cast.movie_id
+  AND movie_keyword.movie_id = cast_info.movie_id
+  AND movie_keyword.movie_id = complete_cast.movie_id
+  AND cast_info.movie_id = complete_cast.movie_id
+  AND char_name.id = cast_info.person_role_id
+  AND name.id = cast_info.person_id
+  AND keyword.id = movie_keyword.keyword_id
+  AND comp_cast_type.id = complete_cast.subject_id
+  AND comp_cast_type.id = complete_cast.status_id;
 

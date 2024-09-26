@@ -1,26 +1,26 @@
-SELECT MIN(mi.info) AS movie_budget,
-       MIN(mi_idx.info) AS movie_votes,
-       MIN(t.title) AS movie_title
-FROM cast_info AS ci,
-     info_type AS it1,
-     info_type AS it2,
-     movie_info AS mi,
-     movie_info_idx AS mi_idx,
-     name AS n,
-     title AS t
-WHERE ci.note IN ('(producer)',
+SELECT MIN(movie_info.info) AS movie_budget,
+       MIN(movie_info_idx.info) AS movie_votes,
+       MIN(title.title) AS movie_title
+FROM cast_info,
+     info_type,
+     info_type,
+     movie_info,
+     movie_info_idx,
+     name,
+     title
+WHERE cast_info.note IN ('(producer)',
                   '(executive producer)')
-  AND it1.info = 'budget'
-  AND it2.info = 'votes'
-  AND n.gender = 'm'
-  AND n.name LIKE '%Tim%'
-  AND t.id = mi.movie_id
-  AND t.id = mi_idx.movie_id
-  AND t.id = ci.movie_id
-  AND ci.movie_id = mi.movie_id
-  AND ci.movie_id = mi_idx.movie_id
-  AND mi.movie_id = mi_idx.movie_id
-  AND n.id = ci.person_id
-  AND it1.id = mi.info_type_id
-  AND it2.id = mi_idx.info_type_id;
+  AND info_type.info = 'budget'
+  AND info_type.info = 'votes'
+  AND name.gender = 'm'
+  AND name.name LIKE '%Tim%'
+  AND title.id = movie_info.movie_id
+  AND title.id = movie_info_idx.movie_id
+  AND title.id = cast_info.movie_id
+  AND cast_info.movie_id = movie_info.movie_id
+  AND cast_info.movie_id = movie_info_idx.movie_id
+  AND movie_info.movie_id = movie_info_idx.movie_id
+  AND name.id = cast_info.person_id
+  AND info_type.id = movie_info.info_type_id
+  AND info_type.id = movie_info_idx.info_type_id;
 

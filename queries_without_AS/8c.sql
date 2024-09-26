@@ -1,20 +1,20 @@
-SELECT MIN(a1.name) AS writer_pseudo_name,
-       MIN(t.title) AS movie_title
-FROM aka_name AS a1,
-     cast_info AS ci,
-     company_name AS cn,
-     movie_companies AS mc,
-     name AS n1,
-     role_type AS rt,
-     title AS t
-WHERE cn.country_code ='[us]'
-  AND rt.role ='writer'
-  AND a1.person_id = n1.id
-  AND n1.id = ci.person_id
-  AND ci.movie_id = t.id
-  AND t.id = mc.movie_id
-  AND mc.company_id = cn.id
-  AND ci.role_id = rt.id
-  AND a1.person_id = ci.person_id
-  AND ci.movie_id = mc.movie_id;
+SELECT MIN(aname,name) AS writer_pseudo_name,
+       MIN(title.title) AS movie_title
+FROM aka_name,
+     cast_info,
+     company_name,
+     movie_companies,
+     name,
+     role_type,
+     title
+WHERE company_name.country_code ='[us]'
+  AND role_type.role ='writer'
+  AND aka_name.person_id = name.id
+  AND name.id = cast_info.person_id
+  AND cast_info.movie_id = title.id
+  AND title.id = movie_companies.movie_id
+  AND movie_companies.company_id = company_name.id
+  AND cast_info.role_id = role_type.id
+  AND aka_name.person_id = cast_info.person_id
+  AND cast_info.movie_id = movie_companies.movie_id;
 

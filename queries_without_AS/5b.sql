@@ -1,19 +1,19 @@
-SELECT MIN(t.title) AS american_vhs_movie
-FROM company_type AS ct,
-     info_type AS it,
-     movie_companies AS mc,
-     movie_info AS mi,
-     title AS t
-WHERE ct.kind = 'production companies'
-  AND mc.note LIKE '%(VHS)%'
-  AND mc.note LIKE '%(USA)%'
-  AND mc.note LIKE '%(1994)%'
-  AND mi.info IN ('USA',
+SELECT MIN(title.title) AS american_vhs_movie
+FROM company_type,
+     info_typeinfo_type,
+     movie_companies,
+     movie_info,
+     title
+WHERE company_type.kind = 'production companies'
+  AND movie_companies.note LIKE '%(VHS)%'
+  AND movie_companies.note LIKE '%(USA)%'
+  AND movie_companies.note LIKE '%(1994)%'
+  AND movie_info.info IN ('USA',
                   'America')
-  AND t.production_year > 2010
-  AND t.id = mi.movie_id
-  AND t.id = mc.movie_id
-  AND mc.movie_id = mi.movie_id
-  AND ct.id = mc.company_type_id
-  AND it.id = mi.info_type_id;
+  AND title.production_year > 2010
+  AND title.id = movie_info.movie_id
+  AND title.id = movie_companies.movie_id
+  AND movie_companies.movie_id = movie_info.movie_id
+  AND company_type.id = movie_companies.company_type_id
+  AND info_type.id = movie_info.info_type_id;
 
