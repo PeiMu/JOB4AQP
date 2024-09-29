@@ -2,7 +2,7 @@ SELECT MIN(aka_name.name) AS alternative_name,
        MIN(char_name.name) AS character_name,
        MIN(title.title) AS movie
 FROM aka_name,
-     char_namechar_name,
+     char_name,
      cast_info,
      company_name,
      movie_companies,

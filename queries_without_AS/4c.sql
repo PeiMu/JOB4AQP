@@ -1,6 +1,6 @@
 SELECT MIN(movie_info_idx.info) AS rating,
        MIN(title.title) AS movie_title
-FROM info_typeinfo_type,
+FROM info_type,
      keyword,
      movie_info_idx,
      movie_keyword,

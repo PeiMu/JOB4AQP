@@ -1,4 +1,4 @@
-SELECT MIN(title.kind) AS movie_kind,
+SELECT MIN(kind_type.kind) AS movie_kind,
        MIN(title.title) AS complete_us_internet_movie
 FROM complete_cast,
      comp_cast_type,
@@ -6,7 +6,7 @@ FROM complete_cast,
      company_type,
      info_type,
      keyword,
-     kind_typet,
+     kind_type,
      movie_companies,
      movie_info,
      movie_keyword,
@@ -14,7 +14,7 @@ FROM complete_cast,
 WHERE comp_cast_type.kind = 'complete+verified'
   AND company_name.country_code = '[us]'
   AND info_type.info = 'release dates'
-  AND title.kind IN ('movie',
+  AND kind_type.kind IN ('movie',
                   'tv movie',
                   'video movie',
                   'video game')
@@ -23,7 +23,7 @@ WHERE comp_cast_type.kind = 'complete+verified'
   AND (movie_info.info LIKE 'USA:% 199%'
        OR movie_info.info LIKE 'USA:% 200%')
   AND title.production_year > 1990
-  AND title.id = title.kind_id
+  AND kind_type.id = title.kind_id
   AND title.id = movie_info.movie_id
   AND title.id = movie_keyword.movie_id
   AND title.id = movie_companies.movie_id

@@ -1,4 +1,4 @@
-SELECT MIN(aname,name) AS writer_pseudo_name,
+SELECT MIN(aka_name.name) AS writer_pseudo_name,
        MIN(title.title) AS movie_title
 FROM aka_name,
      cast_info,

@@ -1,10 +1,10 @@
 SELECT MIN(name.name) AS voicing_actress,
        MIN(title.title) AS voiced_movie
 FROM aka_name,
-     char_namechar_name,
+     char_name,
      cast_info,
      company_name,
-     info_typeinfo_type,
+     info_type,
      movie_companies,
      movie_info,
      name,

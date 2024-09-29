@@ -1,6 +1,6 @@
 SELECT MIN(char_name.name) AS uncredited_voiced_character,
        MIN(title.title) AS russian_movie
-FROM char_namechar_name,
+FROM char_name,
      cast_info,
      company_name,
      company_type,

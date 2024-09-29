@@ -1,4 +1,4 @@
-SELECT MIN(title.kind) AS movie_kind,
+SELECT MIN(kind_type.kind) AS movie_kind,
        MIN(title.title) AS complete_nerdy_internet_movie
 FROM complete_cast,
      comp_cast_type,
@@ -6,7 +6,7 @@ FROM complete_cast,
      company_type,
      info_type,
      keyword,
-     kind_typet,
+     kind_type,
      movie_companies,
      movie_info,
      movie_keyword,
@@ -18,11 +18,11 @@ WHERE comp_cast_type.kind = 'complete+verified'
                     'loner',
                     'alienation',
                     'dignity')
-  AND title.kind IN ('movie')
+  AND kind_type.kind IN ('movie')
   AND movie_info.note LIKE '%internet%'
   AND movie_info.info LIKE 'USA:% 200%'
   AND title.production_year > 2000
-  AND title.id = title.kind_id
+  AND kind_type.id = title.kind_id
   AND title.id = movie_info.movie_id
   AND title.id = movie_keyword.movie_id
   AND title.id = movie_companies.movie_id

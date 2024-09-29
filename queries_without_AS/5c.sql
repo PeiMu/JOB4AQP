@@ -1,6 +1,6 @@
 SELECT MIN(title.title) AS american_movie
 FROM company_type,
-     info_typeinfo_type,
+     info_type,
      movie_companies,
      movie_info,
      title

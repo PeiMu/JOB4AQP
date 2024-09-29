@@ -3,7 +3,7 @@ SELECT MIN(aka_name.name) AS alternative_name,
        MIN(name.name) AS voicing_actress,
        MIN(title.title) AS american_movie
 FROM aka_name,
-     char_namechar_name,
+     char_name,
      cast_info,
      company_name,
      movie_companies,

@@ -6,7 +6,7 @@ SELECT MIN(company_name.name) AS first_company,
        MIN(title.title) AS second_movie
 FROM company_name,
      info_type,
-     kind_typet,
+     kind_type,
      link_type,
      movie_companies,
      movie_info_idx,
@@ -15,9 +15,9 @@ FROM company_name,
 WHERE company_name.country_code != '[us]'
   AND info_type.info = 'rating'
   AND info_type.info = 'rating'
-  AND title.kind IN ('tv series',
+  AND kind_type.kind IN ('tv series',
                    'episode')
-  AND title.kind IN ('tv series',
+  AND kind_type.kind IN ('tv series',
                    'episode')
   AND link_type.link IN ('sequel',
                   'follows',
@@ -29,18 +29,18 @@ WHERE company_name.country_code != '[us]'
   AND title.id = movie_link.linked_movie_id
   AND info_type.id = movie_info_idx.info_type_id
   AND title.id = movie_info_idx.movie_id
-  AND title.id = title.kind_id
-  AND company_name.id = company_name.company_id
-  AND title.id = company_name.movie_id
+  AND kind_type.id = title.kind_id
+  AND company_name.id = movie_companies.company_id
+  AND title.id = movie_companies.movie_id
   AND movie_link.movie_id = movie_info_idx.movie_id
-  AND movie_link.movie_id = company_name.movie_id
-  AND movie_info_idx.movie_id = company_name.movie_id
+  AND movie_link.movie_id = movie_companies.movie_id
+  AND movie_info_idx.movie_id = movie_companies.movie_id
   AND info_type.id = movie_info_idx.info_type_id
   AND title.id = movie_info_idx.movie_id
-  AND title.id = title.kind_id
-  AND company_name.id = company_name.company_id
-  AND title.id = company_name.movie_id
+  AND kind_type.id = title.kind_id
+  AND company_name.id = movie_companies.company_id
+  AND title.id = movie_companies.movie_id
   AND movie_link.linked_movie_id = movie_info_idx.movie_id
-  AND movie_link.linked_movie_id = company_name.movie_id
-  AND movie_info_idx.movie_id = company_name.movie_id;
+  AND movie_link.linked_movie_id = movie_companies.movie_id
+  AND movie_info_idx.movie_id = movie_companies.movie_id;
 

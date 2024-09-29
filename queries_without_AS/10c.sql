@@ -1,6 +1,6 @@
 SELECT MIN(char_name.name) AS character,
        MIN(title.title) AS movie_with_american_producer
-FROM char_namechar_name,
+FROM char_name,
      cast_info,
      company_name,
      company_type,

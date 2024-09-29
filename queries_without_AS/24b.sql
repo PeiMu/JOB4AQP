@@ -1,11 +1,11 @@
 SELECT MIN(char_name.name) AS voiced_char_name,
        MIN(name.name) AS voicing_actress_name,
-       MIN(title.title)ung_fu_panda
+       MIN(title.title) AS kung_fu_panda
 FROM aka_name,
-     char_namechar_name,
+     char_name,
      cast_info,
      company_name,
-     info_typeinfo_type,
+     info_type,
      keyword,
      movie_companies,
      movie_info,

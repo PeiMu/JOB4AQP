@@ -2,7 +2,7 @@ SELECT MIN(name.name) AS cast_member_name,
        MIN(person_info.info) AS cast_member_info
 FROM aka_name,
      cast_info,
-     info_typeinfo_type,
+     info_type,
      link_type,
      movie_link,
      name,

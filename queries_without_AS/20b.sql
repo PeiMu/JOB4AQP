@@ -2,10 +2,10 @@ SELECT MIN(title.title) AS complete_downey_ironman_movie
 FROM complete_cast,
      comp_cast_type,
      comp_cast_type,
-     char_namechar_name,
+     char_name,
      cast_info,
      keyword,
-     kind_typet,
+     kind_type,
      movie_keyword,
      name,
      title

@@ -16,16 +16,16 @@ WHERE company_name.country_code = '[us]'
   AND movie_info.note LIKE '%internet%'
   AND movie_info.info LIKE 'USA:% 200%'
   AND title.production_year > 2000
-  AND title.id = atitle.movie_id
+  AND title.id = aka_title.movie_id
   AND title.id = movie_info.movie_id
   AND title.id = movie_keyword.movie_id
   AND title.id = movie_companies.movie_id
   AND movie_keyword.movie_id = movie_info.movie_id
   AND movie_keyword.movie_id = movie_companies.movie_id
-  AND movie_keyword.movie_id = atitle.movie_id
+  AND movie_keyword.movie_id = aka_title.movie_id
   AND movie_info.movie_id = movie_companies.movie_id
-  AND movie_info.movie_id = atitle.movie_id
-  AND movie_companies.movie_id = atitle.movie_id
+  AND movie_info.movie_id = aka_title.movie_id
+  AND movie_companies.movie_id = aka_title.movie_id
   AND keyword.id = movie_keyword.keyword_id
   AND info_type.id = movie_info.info_type_id
   AND company_name.id = movie_companies.company_id
