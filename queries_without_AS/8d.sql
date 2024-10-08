@@ -1,3 +1,10 @@
+set effective_cache_size to '8 GB';
+set statement_timeout = '1000s';
+
+SET max_parallel_workers = 0;
+SET max_parallel_workers_per_gather = 0;
+SET parallel_leader_participation = off;
+
 SELECT MIN(aka_name.name) AS costume_designer_pseudo,
        MIN(title.title) AS movie_with_costumes
 FROM aka_name,
