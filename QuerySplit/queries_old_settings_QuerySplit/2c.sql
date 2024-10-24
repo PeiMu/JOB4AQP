@@ -1,0 +1,26 @@
+
+SET parallel_leader_participation = off;
+set max_parallel_workers_per_gather = '0';
+
+
+switch to c_r;
+switch to relationshipcenter;
+
+
+set max_parallel_workers = 0;
+set effective_cache_size to '8 GB';
+set statement_timeout = '1000s';
+SELECT MIN(t.title) AS movie_title
+FROM company_name AS cn,
+     keyword AS k,
+     movie_companies AS mc,
+     movie_keyword AS mk,
+     title AS t
+WHERE cn.country_code ='[sm]'
+  AND k.keyword ='character-name-in-title'
+  AND cn.id = mc.company_id
+  AND mc.movie_id = t.id
+  AND t.id = mk.movie_id
+  AND mk.keyword_id = k.id
+  AND mc.movie_id = mk.movie_id;
+

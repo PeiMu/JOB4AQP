@@ -1,0 +1,30 @@
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings/16b.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings/16b.sql
+  Time (mean ± σ):     13.237 s ±  0.070 s    [User: 0.001 s, System: 0.000 s]
+  Range (min … max):   13.167 s … 13.324 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings/20b.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings/20b.sql
+  Time (mean ± σ):     32.978 s ±  0.062 s    [User: 0.001 s, System: 0.000 s]
+  Range (min … max):   32.922 s … 33.066 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings/20c.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings/20c.sql
+  Time (mean ± σ):     34.448 s ±  0.124 s    [User: 0.001 s, System: 0.000 s]
+  Range (min … max):   34.299 s … 34.687 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings/25c.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings/25c.sql
+  Time (mean ± σ):      7.541 s ±  0.050 s    [User: 0.001 s, System: 0.000 s]
+  Range (min … max):    7.477 s …  7.625 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings/6d.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings/6d.sql
+  Time (mean ± σ):      4.652 s ±  0.028 s    [User: 0.001 s, System: 0.001 s]
+  Range (min … max):    4.614 s …  4.694 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings/8a.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings/8a.sql
+  Time (mean ± σ):      2.184 s ±  0.019 s    [User: 0.001 s, System: 0.000 s]
+  Range (min … max):    2.169 s …  2.232 s    10 runs
+ 

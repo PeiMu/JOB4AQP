@@ -1,0 +1,336 @@
+timer psql -U imdb -d imdb -f queries_new_settings_without_redundant/16b.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000007465
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000020553
+
+SET
+psql:queries_new_settings_without_redundant/16b.sql:2: INFO:  Original Postgres portal run time is: : 0.000002207
+
+psql:queries_new_settings_without_redundant/16b.sql:2: INFO:  Original Postgres planner time is: : 0.000008543
+
+SET
+psql:queries_new_settings_without_redundant/16b.sql:3: INFO:  Original Postgres portal run time is: : 0.000002309
+
+psql:queries_new_settings_without_redundant/16b.sql:3: INFO:  Original Postgres planner time is: : 0.000008575
+
+SET
+psql:queries_new_settings_without_redundant/16b.sql:4: INFO:  Original Postgres portal run time is: : 0.000001970
+
+psql:queries_new_settings_without_redundant/16b.sql:4: INFO:  Original Postgres planner time is: : 0.000008161
+
+SET
+psql:queries_new_settings_without_redundant/16b.sql:5: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_without_redundant/16b.sql:6: INFO:  Original Postgres portal run time is: : 0.000019495
+
+psql:queries_new_settings_without_redundant/16b.sql:6: INFO:  Original Postgres planner time is: : 0.000025878
+
+SET
+psql:queries_new_settings_without_redundant/16b.sql:7: INFO:  Original Postgres portal run time is: : 0.000002003
+
+psql:queries_new_settings_without_redundant/16b.sql:7: INFO:  Original Postgres planner time is: : 0.000021198
+
+SET
+psql:queries_new_settings_without_redundant/16b.sql:8: INFO:  Original Postgres portal run time is: : 0.000002306
+
+psql:queries_new_settings_without_redundant/16b.sql:8: INFO:  Original Postgres planner time is: : 0.000008434
+
+SET
+psql:queries_new_settings_without_redundant/16b.sql:9: INFO:  Original Postgres portal run time is: : 0.000023373
+
+psql:queries_new_settings_without_redundant/16b.sql:9: INFO:  Original Postgres planner time is: : 0.000029599
+
+SET
+psql:queries_new_settings_without_redundant/16b.sql:10: INFO:  Original Postgres portal run time is: : 0.000002121
+
+psql:queries_new_settings_without_redundant/16b.sql:10: INFO:  Original Postgres planner time is: : 0.000008267
+
+SET
+psql:queries_new_settings_without_redundant/16b.sql:31: INFO:  Original Postgres portal run time is: : 13.555475820
+
+psql:queries_new_settings_without_redundant/16b.sql:31: INFO:  Original Postgres planner time is: : 13.560127190
+
+ cool_actor_pseudonym | series_named_after_char 
+----------------------+-------------------------
+ ...                  | 002 agenti segretissimi
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_without_redundant/20b.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000007482
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000019951
+
+SET
+psql:queries_new_settings_without_redundant/20b.sql:2: INFO:  Original Postgres portal run time is: : 0.000002116
+
+psql:queries_new_settings_without_redundant/20b.sql:2: INFO:  Original Postgres planner time is: : 0.000008267
+
+SET
+psql:queries_new_settings_without_redundant/20b.sql:3: INFO:  Original Postgres portal run time is: : 0.000002041
+
+psql:queries_new_settings_without_redundant/20b.sql:3: INFO:  Original Postgres planner time is: : 0.000008164
+
+SET
+psql:queries_new_settings_without_redundant/20b.sql:4: INFO:  Original Postgres portal run time is: : 0.000001136
+
+psql:queries_new_settings_without_redundant/20b.sql:4: INFO:  Original Postgres planner time is: : 0.000004720
+
+SET
+psql:queries_new_settings_without_redundant/20b.sql:5: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_without_redundant/20b.sql:6: INFO:  Original Postgres portal run time is: : 0.000004649
+
+psql:queries_new_settings_without_redundant/20b.sql:6: INFO:  Original Postgres planner time is: : 0.000008106
+
+SET
+psql:queries_new_settings_without_redundant/20b.sql:7: INFO:  Original Postgres portal run time is: : 0.000001006
+
+psql:queries_new_settings_without_redundant/20b.sql:7: INFO:  Original Postgres planner time is: : 0.000003914
+
+SET
+psql:queries_new_settings_without_redundant/20b.sql:8: INFO:  Original Postgres portal run time is: : 0.000000875
+
+psql:queries_new_settings_without_redundant/20b.sql:8: INFO:  Original Postgres planner time is: : 0.000003774
+
+SET
+psql:queries_new_settings_without_redundant/20b.sql:9: INFO:  Original Postgres portal run time is: : 0.000003748
+
+psql:queries_new_settings_without_redundant/20b.sql:9: INFO:  Original Postgres planner time is: : 0.000007027
+
+SET
+psql:queries_new_settings_without_redundant/20b.sql:10: INFO:  Original Postgres portal run time is: : 0.000001152
+
+psql:queries_new_settings_without_redundant/20b.sql:10: INFO:  Original Postgres planner time is: : 0.000004315
+
+SET
+psql:queries_new_settings_without_redundant/20b.sql:47: INFO:  Original Postgres portal run time is: : 32.775703960
+
+psql:queries_new_settings_without_redundant/20b.sql:47: INFO:  Original Postgres planner time is: : 32.784735096
+
+ complete_downey_ironman_movie 
+-------------------------------
+ Iron Man
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_without_redundant/20c.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000007914
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000021045
+
+SET
+psql:queries_new_settings_without_redundant/20c.sql:2: INFO:  Original Postgres portal run time is: : 0.000003494
+
+psql:queries_new_settings_without_redundant/20c.sql:2: INFO:  Original Postgres planner time is: : 0.000011430
+
+SET
+psql:queries_new_settings_without_redundant/20c.sql:3: INFO:  Original Postgres portal run time is: : 0.000002577
+
+psql:queries_new_settings_without_redundant/20c.sql:3: INFO:  Original Postgres planner time is: : 0.000024656
+
+SET
+psql:queries_new_settings_without_redundant/20c.sql:4: INFO:  Original Postgres portal run time is: : 0.000001599
+
+psql:queries_new_settings_without_redundant/20c.sql:4: INFO:  Original Postgres planner time is: : 0.000006263
+
+SET
+psql:queries_new_settings_without_redundant/20c.sql:5: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_without_redundant/20c.sql:6: INFO:  Original Postgres portal run time is: : 0.000007358
+
+psql:queries_new_settings_without_redundant/20c.sql:6: INFO:  Original Postgres planner time is: : 0.000015731
+
+SET
+psql:queries_new_settings_without_redundant/20c.sql:7: INFO:  Original Postgres portal run time is: : 0.000002101
+
+psql:queries_new_settings_without_redundant/20c.sql:7: INFO:  Original Postgres planner time is: : 0.000007480
+
+SET
+psql:queries_new_settings_without_redundant/20c.sql:8: INFO:  Original Postgres portal run time is: : 0.000001366
+
+psql:queries_new_settings_without_redundant/20c.sql:8: INFO:  Original Postgres planner time is: : 0.000005436
+
+SET
+psql:queries_new_settings_without_redundant/20c.sql:9: INFO:  Original Postgres portal run time is: : 0.000005331
+
+psql:queries_new_settings_without_redundant/20c.sql:9: INFO:  Original Postgres planner time is: : 0.000011094
+
+SET
+psql:queries_new_settings_without_redundant/20c.sql:10: INFO:  Original Postgres portal run time is: : 0.000002308
+
+psql:queries_new_settings_without_redundant/20c.sql:10: INFO:  Original Postgres planner time is: : 0.000008374
+
+SET
+psql:queries_new_settings_without_redundant/20c.sql:49: INFO:  Original Postgres portal run time is: : 34.012996710
+
+psql:queries_new_settings_without_redundant/20c.sql:49: INFO:  Original Postgres planner time is: : 34.025420283
+
+   cast_member   | complete_dynamic_hero_movie 
+-----------------+-----------------------------
+ Abell, Alistair | 12 Rounds
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_without_redundant/25c.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000007639
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000020164
+
+SET
+psql:queries_new_settings_without_redundant/25c.sql:2: INFO:  Original Postgres portal run time is: : 0.000002257
+
+psql:queries_new_settings_without_redundant/25c.sql:2: INFO:  Original Postgres planner time is: : 0.000008417
+
+SET
+psql:queries_new_settings_without_redundant/25c.sql:3: INFO:  Original Postgres portal run time is: : 0.000002278
+
+psql:queries_new_settings_without_redundant/25c.sql:3: INFO:  Original Postgres planner time is: : 0.000008618
+
+SET
+psql:queries_new_settings_without_redundant/25c.sql:4: INFO:  Original Postgres portal run time is: : 0.000001925
+
+psql:queries_new_settings_without_redundant/25c.sql:4: INFO:  Original Postgres planner time is: : 0.000025800
+
+SET
+psql:queries_new_settings_without_redundant/25c.sql:5: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_without_redundant/25c.sql:6: INFO:  Original Postgres portal run time is: : 0.000004293
+
+psql:queries_new_settings_without_redundant/25c.sql:6: INFO:  Original Postgres planner time is: : 0.000008202
+
+SET
+psql:queries_new_settings_without_redundant/25c.sql:7: INFO:  Original Postgres portal run time is: : 0.000001083
+
+psql:queries_new_settings_without_redundant/25c.sql:7: INFO:  Original Postgres planner time is: : 0.000004099
+
+SET
+psql:queries_new_settings_without_redundant/25c.sql:8: INFO:  Original Postgres portal run time is: : 0.000000994
+
+psql:queries_new_settings_without_redundant/25c.sql:8: INFO:  Original Postgres planner time is: : 0.000003930
+
+SET
+psql:queries_new_settings_without_redundant/25c.sql:9: INFO:  Original Postgres portal run time is: : 0.000004542
+
+psql:queries_new_settings_without_redundant/25c.sql:9: INFO:  Original Postgres planner time is: : 0.000007636
+
+SET
+psql:queries_new_settings_without_redundant/25c.sql:10: INFO:  Original Postgres portal run time is: : 0.000001163
+
+psql:queries_new_settings_without_redundant/25c.sql:10: INFO:  Original Postgres planner time is: : 0.000004345
+
+SET
+psql:queries_new_settings_without_redundant/25c.sql:53: INFO:  Original Postgres portal run time is: : 7.520264490
+
+psql:queries_new_settings_without_redundant/25c.sql:53: INFO:  Original Postgres planner time is: : 7.527717829
+
+ movie_budget | movie_votes |    male_writer    | violent_movie_title 
+--------------+-------------+-------------------+---------------------
+ Action       | 10          | Aakeson, Kim Fupz | $
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_without_redundant/6d.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000007493
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000020857
+
+SET
+psql:queries_new_settings_without_redundant/6d.sql:2: INFO:  Original Postgres portal run time is: : 0.000002113
+
+psql:queries_new_settings_without_redundant/6d.sql:2: INFO:  Original Postgres planner time is: : 0.000008456
+
+SET
+psql:queries_new_settings_without_redundant/6d.sql:3: INFO:  Original Postgres portal run time is: : 0.000002216
+
+psql:queries_new_settings_without_redundant/6d.sql:3: INFO:  Original Postgres planner time is: : 0.000008320
+
+SET
+psql:queries_new_settings_without_redundant/6d.sql:4: INFO:  Original Postgres portal run time is: : 0.000002198
+
+psql:queries_new_settings_without_redundant/6d.sql:4: INFO:  Original Postgres planner time is: : 0.000024073
+
+SET
+psql:queries_new_settings_without_redundant/6d.sql:5: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_without_redundant/6d.sql:6: INFO:  Original Postgres portal run time is: : 0.000018167
+
+psql:queries_new_settings_without_redundant/6d.sql:6: INFO:  Original Postgres planner time is: : 0.000024539
+
+SET
+psql:queries_new_settings_without_redundant/6d.sql:7: INFO:  Original Postgres portal run time is: : 0.000002140
+
+psql:queries_new_settings_without_redundant/6d.sql:7: INFO:  Original Postgres planner time is: : 0.000008404
+
+SET
+psql:queries_new_settings_without_redundant/6d.sql:8: INFO:  Original Postgres portal run time is: : 0.000001463
+
+psql:queries_new_settings_without_redundant/6d.sql:8: INFO:  Original Postgres planner time is: : 0.000004952
+
+SET
+psql:queries_new_settings_without_redundant/6d.sql:9: INFO:  Original Postgres portal run time is: : 0.000004495
+
+psql:queries_new_settings_without_redundant/6d.sql:9: INFO:  Original Postgres planner time is: : 0.000007743
+
+SET
+psql:queries_new_settings_without_redundant/6d.sql:10: INFO:  Original Postgres portal run time is: : 0.000001525
+
+psql:queries_new_settings_without_redundant/6d.sql:10: INFO:  Original Postgres planner time is: : 0.000005219
+
+SET
+psql:queries_new_settings_without_redundant/6d.sql:33: INFO:  Original Postgres portal run time is: : 4.638589600
+
+psql:queries_new_settings_without_redundant/6d.sql:33: INFO:  Original Postgres planner time is: : 4.640946634
+
+ movie_keyword  |     actor_name     |      hero_movie       
+----------------+--------------------+-----------------------
+ based-on-comic | Downey Jr., Robert | 2008 MTV Movie Awards
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_without_redundant/8a.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000007247
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000019647
+
+SET
+psql:queries_new_settings_without_redundant/8a.sql:2: INFO:  Original Postgres portal run time is: : 0.000002090
+
+psql:queries_new_settings_without_redundant/8a.sql:2: INFO:  Original Postgres planner time is: : 0.000008248
+
+SET
+psql:queries_new_settings_without_redundant/8a.sql:3: INFO:  Original Postgres portal run time is: : 0.000002199
+
+psql:queries_new_settings_without_redundant/8a.sql:3: INFO:  Original Postgres planner time is: : 0.000021464
+
+SET
+psql:queries_new_settings_without_redundant/8a.sql:4: INFO:  Original Postgres portal run time is: : 0.000002009
+
+psql:queries_new_settings_without_redundant/8a.sql:4: INFO:  Original Postgres planner time is: : 0.000008161
+
+SET
+psql:queries_new_settings_without_redundant/8a.sql:5: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_without_redundant/8a.sql:6: INFO:  Original Postgres portal run time is: : 0.000004717
+
+psql:queries_new_settings_without_redundant/8a.sql:6: INFO:  Original Postgres planner time is: : 0.000008422
+
+SET
+psql:queries_new_settings_without_redundant/8a.sql:7: INFO:  Original Postgres portal run time is: : 0.000001094
+
+psql:queries_new_settings_without_redundant/8a.sql:7: INFO:  Original Postgres planner time is: : 0.000004060
+
+SET
+psql:queries_new_settings_without_redundant/8a.sql:8: INFO:  Original Postgres portal run time is: : 0.000001024
+
+psql:queries_new_settings_without_redundant/8a.sql:8: INFO:  Original Postgres planner time is: : 0.000003869
+
+SET
+psql:queries_new_settings_without_redundant/8a.sql:9: INFO:  Original Postgres portal run time is: : 0.000003703
+
+psql:queries_new_settings_without_redundant/8a.sql:9: INFO:  Original Postgres planner time is: : 0.000006986
+
+SET
+psql:queries_new_settings_without_redundant/8a.sql:10: INFO:  Original Postgres portal run time is: : 0.000025859
+
+psql:queries_new_settings_without_redundant/8a.sql:10: INFO:  Original Postgres planner time is: : 0.000029219
+
+SET
+psql:queries_new_settings_without_redundant/8a.sql:33: INFO:  Original Postgres portal run time is: : 2.213572750
+
+psql:queries_new_settings_without_redundant/8a.sql:33: INFO:  Original Postgres planner time is: : 2.217130828
+
+ actress_pseudonym | japanese_movie_dubbed 
+-------------------+-----------------------
+ Chambers, Linda   | Bushi no ichibun
+(1 row)
+

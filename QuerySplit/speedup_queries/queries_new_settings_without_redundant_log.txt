@@ -1,0 +1,30 @@
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings_without_redundant/16b.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings_without_redundant/16b.sql
+  Time (mean ± σ):     13.332 s ±  0.092 s    [User: 0.001 s, System: 0.000 s]
+  Range (min … max):   13.164 s … 13.446 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings_without_redundant/20b.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings_without_redundant/20b.sql
+  Time (mean ± σ):     32.931 s ±  0.183 s    [User: 0.001 s, System: 0.001 s]
+  Range (min … max):   32.785 s … 33.346 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings_without_redundant/20c.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings_without_redundant/20c.sql
+  Time (mean ± σ):     34.441 s ±  0.142 s    [User: 0.001 s, System: 0.000 s]
+  Range (min … max):   34.206 s … 34.593 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings_without_redundant/25c.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings_without_redundant/25c.sql
+  Time (mean ± σ):      7.507 s ±  0.034 s    [User: 0.002 s, System: 0.000 s]
+  Range (min … max):    7.463 s …  7.566 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings_without_redundant/6d.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings_without_redundant/6d.sql
+  Time (mean ± σ):      4.673 s ±  0.031 s    [User: 0.001 s, System: 0.000 s]
+  Range (min … max):    4.632 s …  4.707 s    10 runs
+ 
+hyperfine --warmup 1 --runs 10 "psql -U imdb -d imdb -f queries_new_settings_without_redundant/8a.sql"
+Benchmark 1: psql -U imdb -d imdb -f queries_new_settings_without_redundant/8a.sql
+  Time (mean ± σ):      2.202 s ±  0.020 s    [User: 0.001 s, System: 0.000 s]
+  Range (min … max):    2.181 s …  2.236 s    10 runs
+ 

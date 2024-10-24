@@ -1,0 +1,402 @@
+timer psql -U imdb -d imdb -f queries_new_settings_QuerySplit_without_redundant/16b.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000038137
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000106637
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:2: ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:3: ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:5: INFO:  Original Postgres portal run time is: : 0.000015414
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:5: INFO:  Original Postgres planner time is: : 0.000077385
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:6: INFO:  Original Postgres portal run time is: : 0.000014082
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:6: INFO:  Original Postgres planner time is: : 0.000058223
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:7: INFO:  Original Postgres portal run time is: : 0.000014130
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:7: INFO:  Original Postgres planner time is: : 0.000057731
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:8: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:9: INFO:  Original Postgres portal run time is: : 0.000035599
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:9: INFO:  Original Postgres planner time is: : 0.000076449
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:10: INFO:  Original Postgres portal run time is: : 0.000011164
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:10: INFO:  Original Postgres planner time is: : 0.000044276
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:11: INFO:  Original Postgres portal run time is: : 0.000011779
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:11: INFO:  Original Postgres planner time is: : 0.000043768
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:12: INFO:  Original Postgres portal run time is: : 0.000030348
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:12: INFO:  Original Postgres planner time is: : 0.000063387
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:13: INFO:  Original Postgres portal run time is: : 0.000011742
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:13: INFO:  Original Postgres planner time is: : 0.000042254
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:37: INFO:  Original Postgres portal run time is: : 0.198488318
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:37: INFO:  Original Postgres portal run time is: : 0.468456240
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:37: INFO:  Original Postgres portal run time is: : 1.145861529
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:37: INFO:  Original Postgres portal run time is: : 8.645775000
+
+psql:queries_new_settings_QuerySplit_without_redundant/16b.sql:37: INFO:  Original Postgres planner time is: : 10.535570780
+
+ cool_actor_pseudonym | series_named_after_char 
+----------------------+-------------------------
+ ...                  | 002 agenti segretissimi
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_QuerySplit_without_redundant/20b.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000030446
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000085975
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:2: ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:3: ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:5: INFO:  Original Postgres portal run time is: : 0.000010120
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:5: INFO:  Original Postgres planner time is: : 0.000040487
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:6: INFO:  Original Postgres portal run time is: : 0.000007706
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:6: INFO:  Original Postgres planner time is: : 0.000024037
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:7: INFO:  Original Postgres portal run time is: : 0.000009689
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:7: INFO:  Original Postgres planner time is: : 0.000039591
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:8: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:9: INFO:  Original Postgres portal run time is: : 0.000025297
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:9: INFO:  Original Postgres planner time is: : 0.000055271
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:10: INFO:  Original Postgres portal run time is: : 0.000006046
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:10: INFO:  Original Postgres planner time is: : 0.000022047
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:11: INFO:  Original Postgres portal run time is: : 0.000006349
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:11: INFO:  Original Postgres planner time is: : 0.000021706
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:12: INFO:  Original Postgres portal run time is: : 0.000016997
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:12: INFO:  Original Postgres planner time is: : 0.000031578
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:13: INFO:  Original Postgres portal run time is: : 0.000005623
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:13: INFO:  Original Postgres planner time is: : 0.000020919
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:53: INFO:  Original Postgres portal run time is: : 0.290666200
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:53: INFO:  Original Postgres portal run time is: : 0.003056692
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:53: INFO:  Original Postgres portal run time is: : 0.116962510
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:53: INFO:  Original Postgres portal run time is: : 0.992207930
+
+psql:queries_new_settings_QuerySplit_without_redundant/20b.sql:53: INFO:  Original Postgres planner time is: : 1.412159086
+
+ complete_downey_ironman_movie 
+-------------------------------
+ Iron Man
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_QuerySplit_without_redundant/20c.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000008780
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000023785
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:2: ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:3: ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:5: INFO:  Original Postgres portal run time is: : 0.000002357
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:5: INFO:  Original Postgres planner time is: : 0.000008795
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:6: INFO:  Original Postgres portal run time is: : 0.000002215
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:6: INFO:  Original Postgres planner time is: : 0.000023612
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:7: INFO:  Original Postgres portal run time is: : 0.000001899
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:7: INFO:  Original Postgres planner time is: : 0.000008162
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:8: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:9: INFO:  Original Postgres portal run time is: : 0.000005013
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:9: INFO:  Original Postgres planner time is: : 0.000008814
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:10: INFO:  Original Postgres portal run time is: : 0.000001051
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:10: INFO:  Original Postgres planner time is: : 0.000004117
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:11: INFO:  Original Postgres portal run time is: : 0.000000938
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:11: INFO:  Original Postgres planner time is: : 0.000003843
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:12: INFO:  Original Postgres portal run time is: : 0.000003557
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:12: INFO:  Original Postgres planner time is: : 0.000006596
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:13: INFO:  Original Postgres portal run time is: : 0.000001168
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:13: INFO:  Original Postgres planner time is: : 0.000004276
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:55: INFO:  Original Postgres portal run time is: : 0.253712039
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:55: INFO:  Original Postgres portal run time is: : 0.003170857
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:55: INFO:  Original Postgres portal run time is: : 0.068726026
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:55: INFO:  Original Postgres portal run time is: : 0.507508536
+
+psql:queries_new_settings_QuerySplit_without_redundant/20c.sql:55: INFO:  Original Postgres planner time is: : 0.838103582
+
+   cast_member   | complete_dynamic_hero_movie 
+-----------------+-----------------------------
+ Abell, Alistair | 12 Rounds
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_QuerySplit_without_redundant/25c.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000007913
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000022300
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:2: ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:3: ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:5: INFO:  Original Postgres portal run time is: : 0.000002923
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:5: INFO:  Original Postgres planner time is: : 0.000022482
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:6: INFO:  Original Postgres portal run time is: : 0.000002358
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:6: INFO:  Original Postgres planner time is: : 0.000008827
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:7: INFO:  Original Postgres portal run time is: : 0.000002213
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:7: INFO:  Original Postgres planner time is: : 0.000008602
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:8: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:9: INFO:  Original Postgres portal run time is: : 0.000005361
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:9: INFO:  Original Postgres planner time is: : 0.000009162
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:10: INFO:  Original Postgres portal run time is: : 0.000001102
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:10: INFO:  Original Postgres planner time is: : 0.000004069
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:11: INFO:  Original Postgres portal run time is: : 0.000001059
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:11: INFO:  Original Postgres planner time is: : 0.000019420
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:12: INFO:  Original Postgres portal run time is: : 0.000005861
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:12: INFO:  Original Postgres planner time is: : 0.000010297
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:13: INFO:  Original Postgres portal run time is: : 0.000001304
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:13: INFO:  Original Postgres planner time is: : 0.000005098
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:62: INFO:  Original Postgres portal run time is: : 0.408352896
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:62: INFO:  Original Postgres portal run time is: : 0.129288267
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:62: INFO:  Original Postgres portal run time is: : 0.291927424
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:62: INFO:  Original Postgres portal run time is: : 3.330780181
+
+psql:queries_new_settings_QuerySplit_without_redundant/25c.sql:62: INFO:  Original Postgres planner time is: : 4.169830580
+
+ movie_budget | movie_votes |    male_writer    | violent_movie_title 
+--------------+-------------+-------------------+---------------------
+ Action       | 10          | Aakeson, Kim Fupz | $
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_QuerySplit_without_redundant/6d.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000008536
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000023761
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:2: ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:3: ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:5: INFO:  Original Postgres portal run time is: : 0.000002245
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:5: INFO:  Original Postgres planner time is: : 0.000008984
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:6: INFO:  Original Postgres portal run time is: : 0.000001854
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:6: INFO:  Original Postgres planner time is: : 0.000005864
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:7: INFO:  Original Postgres portal run time is: : 0.000001067
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:7: INFO:  Original Postgres planner time is: : 0.000004806
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:8: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:9: INFO:  Original Postgres portal run time is: : 0.000005304
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:9: INFO:  Original Postgres planner time is: : 0.000009030
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:10: INFO:  Original Postgres portal run time is: : 0.000001230
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:10: INFO:  Original Postgres planner time is: : 0.000004361
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:11: INFO:  Original Postgres portal run time is: : 0.000001504
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:11: INFO:  Original Postgres planner time is: : 0.000005343
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:12: INFO:  Original Postgres portal run time is: : 0.000030100
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:12: INFO:  Original Postgres planner time is: : 0.000035616
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:13: INFO:  Original Postgres portal run time is: : 0.000001595
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:13: INFO:  Original Postgres planner time is: : 0.000005414
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:37: INFO:  Original Postgres portal run time is: : 0.219502188
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:37: INFO:  Original Postgres portal run time is: : 0.410189684
+
+psql:queries_new_settings_QuerySplit_without_redundant/6d.sql:37: INFO:  Original Postgres planner time is: : 0.632185141
+
+ movie_keyword  |     actor_name     |      hero_movie       
+----------------+--------------------+-----------------------
+ based-on-comic | Downey Jr., Robert | 2008 MTV Movie Awards
+(1 row)
+
+timer psql -U imdb -d imdb -f queries_new_settings_QuerySplit_without_redundant/8a.sql
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres portal run time is: : 0.000007760
+
+psql:/home/pei/.psqlrc:1: INFO:  Original Postgres planner time is: : 0.000021806
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:2: ERROR:  syntax error at or near "switch"
+LINE 1: switch to c_r;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:3: ERROR:  syntax error at or near "switch"
+LINE 1: switch to relationshipcenter;
+        ^
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:5: INFO:  Original Postgres portal run time is: : 0.000002338
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:5: INFO:  Original Postgres planner time is: : 0.000007703
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:6: INFO:  Original Postgres portal run time is: : 0.000001779
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:6: INFO:  Original Postgres planner time is: : 0.000005381
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:7: INFO:  Original Postgres portal run time is: : 0.000000843
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:7: INFO:  Original Postgres planner time is: : 0.000003843
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:8: ERROR:  parameter "shared_buffers" cannot be changed without restarting the server
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:9: INFO:  Original Postgres portal run time is: : 0.000006513
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:9: INFO:  Original Postgres planner time is: : 0.000009840
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:10: INFO:  Original Postgres portal run time is: : 0.000001081
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:10: INFO:  Original Postgres planner time is: : 0.000004144
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:11: INFO:  Original Postgres portal run time is: : 0.000001048
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:11: INFO:  Original Postgres planner time is: : 0.000004221
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:12: INFO:  Original Postgres portal run time is: : 0.000003521
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:12: INFO:  Original Postgres planner time is: : 0.000006646
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:13: INFO:  Original Postgres portal run time is: : 0.000001243
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:13: INFO:  Original Postgres planner time is: : 0.000004461
+
+SET
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:38: INFO:  Original Postgres portal run time is: : 0.957080605
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:38: INFO:  Original Postgres portal run time is: : 0.001426321
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:38: INFO:  Original Postgres portal run time is: : 0.000094407
+
+psql:queries_new_settings_QuerySplit_without_redundant/8a.sql:38: INFO:  Original Postgres planner time is: : 0.961949726
+
+ actress_pseudonym | japanese_movie_dubbed 
+-------------------+-----------------------
+ Chambers, Linda   | Bushi no ichibun
+(1 row)
+
