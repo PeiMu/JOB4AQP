@@ -8,7 +8,7 @@ PVLDB Volume 9, No. 3, 2015
 
 
 ```bash
-wget http://homepages.cwi.nl/~boncz/job/imdb.tgz
+wget http://event.cwi.nl/da/job/imdb.tgz # The dataset is from May 2013, based the original paper, 
 tar -zxvf imdb.tgz
 mkdir csv && mv *.csv csv/.
 psql -U imdb -d imdb -f schema.sql
