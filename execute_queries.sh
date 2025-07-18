@@ -1,4 +1,5 @@
-dir="/home/pei/Project/benchmarks/imdb_job-postgres/queries"
+# change JOB_ROOT_PATH
+dir="$JOB_ROOT_PATH/imdb_job-postgres/queries"
 iteration=1
 
 rm -f result/*

@@ -1,2 +1,0 @@
-hyperfine run queries_new_settings_QuerySplit//16b.sql
-Benchmark 1: psql -U imdb -d imdb -f queries_new_settings_QuerySplit//16b.sql
