@@ -1,0 +1,65 @@
+SELECT MIN(char_name.name) AS voiced_char,
+       MIN(name.name) AS voicing_actress,
+       MIN(title.title) AS voiced_animation
+FROM aka_name,
+     complete_cast,
+     comp_cast_type1,
+     comp_cast_type2,
+     char_name,
+     cast_info,
+     company_name,
+     info_type1,
+     info_type2,
+     keyword,
+     movie_companies,
+     movie_info,
+     movie_keyword,
+     name,
+     person_info,
+     role_type,
+     title
+WHERE comp_cast_type1.kind ='cast'
+  AND comp_cast_type2.kind ='complete+verified'
+  AND char_name.name = 'Queen'
+  AND cast_info.note IN ('(voice)',
+                  '(voice) (uncredited)',
+                  '(voice: English version)')
+  AND company_name.country_code ='[us]'
+  AND info_type1.info = 'release dates'
+  AND info_type2.info = 'height'
+  AND keyword.keyword = 'computer-animation'
+  AND movie_info.info LIKE 'USA:%200%'
+  AND name.gender ='f'
+  AND name.name LIKE '%An%'
+  AND role_type.role ='actress'
+  AND title.title = 'Shrek 2'
+  AND title.production_year BETWEEN 2000 AND 2005
+  AND title.id = movie_info.movie_id
+  AND title.id = movie_companies.movie_id
+  AND title.id = cast_info.movie_id
+  AND title.id = movie_keyword.movie_id
+  AND title.id = complete_cast.movie_id
+  AND movie_companies.movie_id = cast_info.movie_id
+  AND movie_companies.movie_id = movie_info.movie_id
+  AND movie_companies.movie_id = movie_keyword.movie_id
+  AND movie_companies.movie_id = complete_cast.movie_id
+  AND movie_info.movie_id = cast_info.movie_id
+  AND movie_info.movie_id = movie_keyword.movie_id
+  AND movie_info.movie_id = complete_cast.movie_id
+  AND cast_info.movie_id = movie_keyword.movie_id
+  AND cast_info.movie_id = complete_cast.movie_id
+  AND movie_keyword.movie_id = complete_cast.movie_id
+  AND company_name.id = movie_companies.company_id
+  AND info_type1.id = movie_info.info_type_id
+  AND name.id = cast_info.person_id
+  AND role_type.id = cast_info.role_id
+  AND name.id = aka_name.person_id
+  AND cast_info.person_id = aka_name.person_id
+  AND char_name.id = cast_info.person_role_id
+  AND name.id = person_info.person_id
+  AND cast_info.person_id = person_info.person_id
+  AND info_type2.id = person_info.info_type_id
+  AND keyword.id = movie_keyword.keyword_id
+  AND comp_cast_type1.id = complete_cast.subject_id
+  AND comp_cast_type2.id = complete_cast.status_id;
+
