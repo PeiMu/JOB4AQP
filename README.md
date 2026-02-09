@@ -84,3 +84,9 @@ Now you can generate the DuckDB dataset. Note to have the correct DuckDB version
 ```bash
 bash ./prepare_duckdb.sh
 ```
+
+Or prepare DuckDB dataset with foreign key constraints
+```bash
+bash ./prepare_duckdb_fk.sh
+duckdb ./imdb_fk.db < ./fkindexes.sql
+```
