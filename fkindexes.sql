@@ -1,6 +1,7 @@
 create index person_id_aka_name on aka_name(person_id);
 create index kind_id_aka_title on aka_title(kind_id);
 create index episode_of_id_aka_title on aka_title(episode_of_id);
+create index movie_id_aka_title on aka_title(movie_id);
 create index person_id_cast_info on cast_info(person_id);
 create index movie_id_cast_info on cast_info(movie_id);
 create index person_role_id_cast_info on cast_info(person_role_id);
