@@ -2,8 +2,8 @@ ALTER TABLE aka_name ADD FOREIGN KEY (person_id) REFERENCES name(id);
 
 ALTER TABLE aka_title
 ADD FOREIGN KEY (kind_id) REFERENCES kind_type(id),
-ADD FOREIGN KEY (episode_of_id) REFERENCES aka_title(id);
--- ADD FOREIGN KEY (movie_id) REFERENCES title(id);
+ADD FOREIGN KEY (episode_of_id) REFERENCES aka_title(id),
+ADD FOREIGN KEY (movie_id) REFERENCES title(id);
 
 ALTER TABLE cast_info
 ADD FOREIGN KEY (person_id) REFERENCES name(id),
