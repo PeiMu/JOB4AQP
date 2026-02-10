@@ -41,6 +41,18 @@ found at
 
 3. add foreign key constraints and indexes
 
+  (not sure why `ADD FOREIGN KEY (movie_id) REFERENCES title(id)` has error.) 
+
+  This is the fix:
+  ```SQL
+  DELETE FROM aka_title a
+  WHERE NOT EXISTS (
+    SELECT 1
+    FROM title t
+    WHERE t.id = a.movie_id
+  );
+  ```
+
   ```sh
   psql -U imdb -d imdb -f fkeys.sql
   psql -U imdb -d imdb -f fkindexes.sql
