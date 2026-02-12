@@ -93,7 +93,7 @@ on all foreign key attributes). You can export all tables to CSV:
 ```
 
 =============================================
-### 
+### Step-by-step instructions for DuckDB
 Now you can generate the DuckDB dataset. Note to have the correct DuckDB version.
 ```bash
 bash ./prepare_duckdb.sh
