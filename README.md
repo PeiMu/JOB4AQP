@@ -23,7 +23,7 @@ The license and links to the current version IMDB data set can be
 found at 
 [http://www.imdb.com/interfaces](http://www.imdb.com/interfaces)
 
-### Step-by-step instructions
+### Step-by-step instructions for PostgreSQL
 1. download `*gz` files and prepare csv files
 
   ```sh
@@ -92,6 +92,8 @@ on all foreign key attributes). You can export all tables to CSV:
 \copy title to 'PATH/title.csv' csv
 ```
 
+=============================================
+### 
 Now you can generate the DuckDB dataset. Note to have the correct DuckDB version.
 ```bash
 bash ./prepare_duckdb.sh
@@ -101,4 +103,26 @@ Or prepare DuckDB dataset with foreign key constraints
 ```bash
 bash ./prepare_duckdb_fk.sh
 duckdb ./imdb_fk.db < ./fkindexes.sql
+```
+
+=============================================
+### Step-by-step instructions for Umbra
+Umbra shares a similar procedure to PostgreSQL.
+
+1. get the latest Umbra and create database
+```bash
+docker run -it \
+    -v umbra-db:/var/db \
+    -v /home/pei/Project/benchmarks/imdb_job-postgres:/benchmark \
+    umbradb/umbra:latest \
+    umbra-sql -createdb /var/db/imdb.db
+```
+
+2. run queries inside
+```bash
+\i /benchmark/schema.sql
+\i /benchmark/import_umbra_csv.sql
+\i /benchmark/fkeys.sql # same `ADD FOREIGN KEY (movie_id) REFERENCES title(id)` error as before; same fix
+\i /benchmark/fkindexes.sql
+\q
 ```
