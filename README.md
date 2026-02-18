@@ -126,3 +126,31 @@ docker run -it \
 \i /benchmark/fkindexes.sql
 \q
 ```
+
+
+=============================================
+### Step-by-step instructions for Umbra
+Umbra shares a similar procedure to MySQL.
+
+```bash
+mariadb -u root -p
+# CREATE DATABASE imdb;
+# CREATE USER 'imdb'@'localhost';
+# GRANT SELECT, INSERT, UPDATE, DELETE, CREATE ON imdb.* TO 'imdb'@'localhost';
+# FLUSH PRIVILEGES;
+```
+
+```bash
+mariadb -u imdb -D imdb < schema.sql
+mariadb -u imdb -D imdb < import_mariadb_csv.sql
+
+mariadb -u root -p -e "GRANT ALTER, REFERENCES ON imdb.* TO 'imdb'@'localhost'; FLUSH PRIVILEGES;"
+mariadb -u root -p -e "GRANT INDEX ON imdb.* TO 'imdb'@'localhost'; FLUSH PRIVILEGES;"
+
+mariadb -u imdb -D imdb -e "DELETE FROM aka_title a WHERE NOT EXISTS ( SELECT 1 FROM title t WHERE t.id = a.movie_id;"
+
+echo "SET FOREIGN_KEY_CHECKS = 0;" | cat - fkeys.sql | mariadb -u imdb -D imdb
+mariadb -u imdb -D imdb --force < fkindexes.sql
+
+mariadb -u imdb -D imdb < analyze_mariadb_table.sql
+```
