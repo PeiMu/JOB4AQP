@@ -129,7 +129,7 @@ docker run -it \
 
 
 =============================================
-### Step-by-step instructions for Umbra
+### Step-by-step instructions for MariaDB
 Umbra shares a similar procedure to MySQL.
 
 ```bash
