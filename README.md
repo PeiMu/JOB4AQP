@@ -115,7 +115,7 @@ docker run -it \
     -v umbra-db:/var/db \
     -v /home/pei/Project/benchmarks/imdb_job-postgres:/benchmark \
     umbradb/umbra:latest \
-    umbra-sql -createdb /var/db/imdb.db
+    umbra-sql -createdb --port 15432 /var/db/imdb.db
 ```
 
 2. run queries inside
