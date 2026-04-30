@@ -35,8 +35,15 @@ found at
 2. create PostgreSQL database
 
   ```sh
+
+  createuser imdb
+  createdb imdb
+  psql -d imdb
+  # GRANT CREATE ON SCHEMA public TO imdb;
+  # GRANT USAGE ON SCHEMA public TO imdb;
+
   psql -U imdb -d imdb -f schema.sql
-  psql -U imdb -d imdb -f import_csv.sql
+  psql -U imdb -d imdb -f import_postgres_csv.sql
   ```
 
 3. add foreign key constraints and indexes
