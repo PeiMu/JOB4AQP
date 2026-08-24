@@ -41,6 +41,8 @@ found at
   psql -d imdb
   # GRANT CREATE ON SCHEMA public TO imdb;
   # GRANT USAGE ON SCHEMA public TO imdb;
+  # CREATE EXTENSION IF NOT EXISTS aqp_plan_export;
+  # GRANT EXECUTE ON FUNCTION aqp_plan_nodestring(text) TO imdb;
 
   psql -U imdb -d imdb -f schema.sql
   psql -U imdb -d imdb -f import_postgres_csv.sql
